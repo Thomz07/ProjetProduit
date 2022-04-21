@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<link rel="shortcut icon" href="" />
+<meta charset="utf-8">
+<title>Boissons</title>
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="../allGrids.css">
+<script type='text/javascript' src="../time.js"></script>
+</head>
+<body id="body" onload="startTime()">
+
+    <div id="time" >
+        <a id="realTime">salut</a>
+    </div>
+    
+    <div class="mainButtons" id="doubleGrid">
+        <div class = "button" onclick="openLink1()">Apéritifs</div>
+        <div class = "button" onclick="openLink2()">Bières</div>
+        <div class = "button" onclick="openLink3()">Cidres</div>
+        <div class = "button" onclick="openLink4()">Softs</div>
+        <div class = "button" onclick="openLink5()">Chaud</div>
+        <div class = "button" onclick="openLink6()">Digestifs</div>
+    </div>
+    
+    <div class="backButton" onclick="goBack()">
+        <a class="buttonText">Retour</a>
+    </div>
+
+    <script type='text/javascript' src="../colors.js"></script>
+    <script>
+        function openLink1(){
+            window.open("Aperitifs/index.html", '_self');
+        }
+
+        function openLink2(){
+            window.open("Bieres/index.html", '_self');
+        }
+
+        function openLink3(){
+            window.open("Cidres/index.html", '_self');
+        }
+
+        function openLink4(){
+            window.open("Softs/index.html", '_self');
+        }
+
+        function openLink5(){
+            window.open("Chaud/index.html", '_self');
+        }
+
+        function openLink6(){
+            window.open("Digestifs/index.html", '_self');
+        }
+    </script>
+
+</body>
+</html>

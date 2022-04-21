@@ -3,23 +3,36 @@
 <head>
 <link rel="shortcut icon" href="" />
 <meta charset="utf-8">
-<title>Fortinaïte ila babadgi</title>
+<title>Menu principal</title>
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="allGrids.css">
+<script type='text/javascript' src="time.js"></script>
 </head>
-<body id="body">
+<body id="body" onload="startTime()">
 
-    <div id="mainButtons">
-        <div id="button1" class="button">
-            <a class="buttonText">Boissons</a>
-        </div>
-        <div id="button2" class="button">
-            <a class="buttonText">Alimentation</a>
-        </div>
+    <div id="time" >
+        <a id="realTime">salut</a>
     </div>
     
-    <div id="backButton" class="button">
-        <a class="buttonText">Retour</a>
+    <div class="mainButtons" id="simpleGrid">
+        <div class = "button" id="button1" onclick="openLink1()">Boissons</div>
+        <div class = "button" id="button2" onclick="openLink2()">Alimentation</div>
     </div>
+    
+    <div class="backButton">
+        <a class="buttonText">Accueil</a>
+    </div>
+
+    <script type='text/javascript' src="colors.js"></script>
+    <script>
+        function openLink1(){
+            window.open("Boissons/index.html", '_self');
+        }
+
+        function openLink2(){
+            window.open("Alimentation/index.html", '_self');
+        }
+    </script>
 
 </body>
 </html>

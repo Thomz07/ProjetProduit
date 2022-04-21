@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<link rel="shortcut icon" href="" />
+<meta charset="utf-8">
+<title>Alimentation</title>
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="../allGrids.css">
+<script type='text/javascript' src="../time.js"></script>
+</head>
+<body id="body" onload="startTime()">
+
+    <div id="time" >
+        <a id="realTime">salut</a>
+    </div>
+    
+    <div class="mainButtons" id="simpleGrid">
+        <div class = "button" id="button1" onclick="openLink1()">Tapas</div>
+        <div class = "button" id="button2" onclick="openLink2()">A partager</div>
+        <div class = "button" id="button3" onclick="openLink3()">Burgers</div>
+    </div>
+    
+    <div class="backButton" onclick="goBack()">
+        <a class="buttonText">Retour</a>
+    </div>
+
+    <script type='text/javascript' src="../colors.js"></script>
+
+    <script>
+        function openLink1(){
+            window.open("Tapas/index.html", '_self');
+        }
+
+        function openLink2(){
+            window.open("A partager/index.html", '_self');
+        }
+
+        function openLink3(){
+            window.open("Burger/index.html", '_self');
+        }
+    </script>
+
+</body>
+</html>
